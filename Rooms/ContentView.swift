@@ -45,10 +45,10 @@ class RoomsVM: ObservableObject {
                 newRoom.west = room
                 return
             }
-
-            room.east = Room()
-            room.east!.west = room.east
-            room.east!.east = eastRoom
+            let newRoom = Room()
+            room.east = newRoom
+            newRoom.west = room
+            newRoom.east = eastRoom
             
         case .south:
             if room.south == nil {
@@ -68,9 +68,11 @@ class RoomsVM: ObservableObject {
                 room.west = newRoom
             } else {
                 let tempRoom = room.west
-                room.west = Room()
-                room.west!.east = room.west
-                room.west!.west = tempRoom
+                let newRoom = Room()
+                
+                room.west = newRoom
+                newRoom.east = room
+                newRoom.west = tempRoom
             }
         }
     }

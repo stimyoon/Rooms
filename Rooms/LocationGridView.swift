@@ -25,19 +25,19 @@ class LocationsViewModel : ObservableObject {
     @Published private(set) var col = 0
     @Published private(set) var row = 0
     
-    static let rowMax = 2
-    static let colMax = 2
+    static let rowMax = 5
+    static let colMax = 4
     
     init(){
-//        self.grid = Array(repeating: Array(repeating: Location(), count: LocationsViewModel.colMax), count: LocationsViewModel.rowMax)
-        self.grid = [[Location(name: "First"), Location(name: "Second")],
-                     [Location(name: "South"), Location(name: "SouthEast")]
-        ]
-//        for row in 0..<LocationsViewModel.rowMax {
-//            for col in 0..<LocationsViewModel.colMax {
-//                grid[row][col].name = String("Room: \(row*LocationsViewModel.colMax + col)")
-//            }
-//        }
+        self.grid = Array(repeating: Array(repeating: Location(), count: LocationsViewModel.colMax), count: LocationsViewModel.rowMax)
+//        self.grid = [[Location(name: "First"), Location(name: "Second")],
+//                     [Location(name: "South"), Location(name: "SouthEast")]
+//        ]
+        for row in 0..<LocationsViewModel.rowMax {
+            for col in 0..<LocationsViewModel.colMax {
+                grid[row][col].name = String("Room: \(row*LocationsViewModel.colMax + col)")
+            }
+        }
         
     }
     func move(direction: Direction){
