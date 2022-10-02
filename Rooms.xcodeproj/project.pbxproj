@@ -11,6 +11,7 @@
 		910C46B228EA159D0027B12C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C46B128EA159D0027B12C /* ContentView.swift */; };
 		910C46B428EA159D0027B12C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C46B328EA159D0027B12C /* Assets.xcassets */; };
 		910C46B728EA159D0027B12C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910C46B628EA159D0027B12C /* Preview Assets.xcassets */; };
+		910C46BE28EA20F10027B12C /* LocationGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C46BD28EA20F10027B12C /* LocationGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		910C46B128EA159D0027B12C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		910C46B328EA159D0027B12C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		910C46B628EA159D0027B12C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		910C46BD28EA20F10027B12C /* LocationGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				910C46AF28EA159D0027B12C /* RoomsApp.swift */,
 				910C46B128EA159D0027B12C /* ContentView.swift */,
+				910C46BD28EA20F10027B12C /* LocationGridView.swift */,
 				910C46B328EA159D0027B12C /* Assets.xcassets */,
 				910C46B528EA159D0027B12C /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910C46BE28EA20F10027B12C /* LocationGridView.swift in Sources */,
 				910C46B228EA159D0027B12C /* ContentView.swift in Sources */,
 				910C46B028EA159D0027B12C /* RoomsApp.swift in Sources */,
 			);
